@@ -47,6 +47,6 @@
         android:id="@+id/button3"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        />
+        android:background="colorAccent"/>
 
 </RelativeLayout>
