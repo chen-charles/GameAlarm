@@ -1,6 +1,5 @@
 package com.whatever.app.gamealarm;
 
-<<<<<<< HEAD
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
