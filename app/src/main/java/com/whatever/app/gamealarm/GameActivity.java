@@ -2,8 +2,10 @@ package com.whatever.app.gamealarm;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import java.util.Random;
 
@@ -59,10 +61,11 @@ public class GameActivity extends AppCompatActivity {
                 ans2.setText(""+num2a+" - ("+num2b+")");
             }
             else {
-                ans1.setText(""+num2a+" - "+num2b);
+                ans2.setText(""+num2a+" - "+num2b);
             }
         }
 
+        //Toast.makeText(this, val1+"\t"+val2, Toast.LENGTH_LONG).show();
 
 
         ans1.setOnClickListener(new View.OnClickListener() {
