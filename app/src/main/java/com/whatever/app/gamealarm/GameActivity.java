@@ -76,9 +76,11 @@ public class GameActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (GameActivity.this.val1>GameActivity.this.val2){
                     Toast.makeText(GameActivity.this, "Correct!", Toast.LENGTH_LONG).show();
+                    finish();
                 }
                 else{
                     Toast.makeText(GameActivity.this, "Wrong!", Toast.LENGTH_LONG).show();
+                    recreate();
                 }
             }
         });
@@ -88,9 +90,11 @@ public class GameActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (GameActivity.this.val2>GameActivity.this.val1){
                     Toast.makeText(GameActivity.this, "Correct!", Toast.LENGTH_LONG).show();
+                    finish();
                 }
                 else{
                     Toast.makeText(GameActivity.this, "Wrong!", Toast.LENGTH_LONG).show();
+                    recreate();
                 }
             }
         });

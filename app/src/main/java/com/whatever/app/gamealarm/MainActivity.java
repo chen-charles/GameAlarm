@@ -37,10 +37,6 @@ public class MainActivity extends AppCompatActivity {
                                 .setContentText("Tap to turn off the alarm")
                                 .setContentIntent(pendingIntent); //Required on Gingerbread and below
 
-
-                //NotificationCompat.Builder notification = new NotificationCompat.Builder(R.drawable.ic_launcherl,
-                //        "GameAlarm", pendingIntent);
-
                 NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
                 notificationManager.notify(5, mBuilder.build());
             }
@@ -49,8 +45,7 @@ public class MainActivity extends AppCompatActivity {
         Button dismissButton = (Button) findViewById(R.id.button2);
         Button cancelButton = (Button) findViewById(R.id.button3);
 
-
-        Intent game = new Intent(this, GameActivity.class );
+        Intent game = new Intent(this, GameActivity.class);
         startActivity(game);
     }
 }
