@@ -9,8 +9,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.whatever.app.gamealarm.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="334dp"
+        android:layout_marginStart="334dp"
+        android:layout_marginTop="528dp"></GridLayout>
 </RelativeLayout>
