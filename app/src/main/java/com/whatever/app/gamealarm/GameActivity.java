@@ -37,7 +37,7 @@ public class GameActivity extends AppCompatActivity {
         }
         else{
             val2 = val1-dif;
-            num1b = val1 + num1a;
+            num1b = num1a - val1;
             if (num1b<0){
                 ans1.setText(""+num1a+" - ("+num1b+")");
             }
@@ -56,7 +56,7 @@ public class GameActivity extends AppCompatActivity {
             }
         }
         else{
-            num2b = val2 + num2a;
+            num2b = num2a - val2;
             if (num2b<0){
                 ans2.setText(""+num2a+" - ("+num2b+")");
             }
@@ -65,7 +65,7 @@ public class GameActivity extends AppCompatActivity {
             }
         }
 
-        //Toast.makeText(this, val1+"\t"+val2, Toast.LENGTH_LONG).show();
+        Toast.makeText(this, val1+"\t"+val2, Toast.LENGTH_LONG).show();
 
 
         ans1.setOnClickListener(new View.OnClickListener() {
