@@ -65,7 +65,7 @@ public class GameActivity extends AppCompatActivity {
             }
         }
 
-        Toast.makeText(this, val1+"\t"+val2, Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, val1+"\t"+val2, Toast.LENGTH_LONG).show();
 
 
         ans1.setOnClickListener(new View.OnClickListener() {
