@@ -1,5 +1,6 @@
 package com.whatever.app.gamealarm;
 
+<<<<<<< HEAD
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -11,6 +12,7 @@ import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,5 +46,12 @@ public class MainActivity extends AppCompatActivity {
                 notificationManager.notify(5, mBuilder.build());
             }
         });
+        Button setButton = (Button) findViewById(R.id.button);
+        Button dismissButton = (Button) findViewById(R.id.button2);
+        Button cancelButton = (Button) findViewById(R.id.button3);
+
+
+        Intent game = new Intent(this, GameActivity.class );
+        startActivity(game);
     }
 }
