@@ -12,12 +12,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button setbutton = (Button) findViewById(R.id.button);
-        Button dismissbutton = (Button) findViewById(R.id.button2);
-        Button cancelbutton = (Button) findViewById(R.id.button3);
+        Button setButton = (Button) findViewById(R.id.button);
+        Button dismissButton = (Button) findViewById(R.id.button2);
+        Button cancelButton = (Button) findViewById(R.id.button3);
 
 
-        Intent intt = new Intent(this, GameActivity.class );
-        startActivity(intt);
+        Intent game = new Intent(this, GameActivity.class );
+        startActivity(game);
     }
 }
