@@ -11,6 +11,8 @@ import java.util.Random;
 
 public class GameActivity extends AppCompatActivity {
 
+    int val1,val2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,10 +22,11 @@ public class GameActivity extends AppCompatActivity {
         Button ans2 = (Button) findViewById(R.id.ans2);
 
         int dif = new Random().nextInt(5)+1;
-        int val1 = new Random().nextInt(50)+1;
         int num1a = new Random().nextInt(50)+1;
         int num2a = new Random().nextInt(50)+1;
-        int val2, num1b, num2b;
+        int num1b, num2b;
+
+        val1 = new Random().nextInt(50)+1;
 
         if (new Random().nextDouble()<0.5){
             val2 = val1+dif;
@@ -71,14 +74,24 @@ public class GameActivity extends AppCompatActivity {
         ans1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                if (GameActivity.this.val1>GameActivity.this.val2){
+                    Toast.makeText(GameActivity.this, "Correct!", Toast.LENGTH_LONG).show();
+                }
+                else{
+                    Toast.makeText(GameActivity.this, "Wrong!", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
         ans2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                if (GameActivity.this.val2>GameActivity.this.val1){
+                    Toast.makeText(GameActivity.this, "Correct!", Toast.LENGTH_LONG).show();
+                }
+                else{
+                    Toast.makeText(GameActivity.this, "Wrong!", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
