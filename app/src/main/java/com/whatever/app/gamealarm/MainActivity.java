@@ -122,6 +122,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 isAlarmOn = false;
+                recreate();
             }
         });
         dismissButton.setOnClickListener(new View.OnClickListener(){
@@ -132,6 +133,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent game = new Intent(MainActivity.this, GameActivity.class);
                     startActivity(game);
                     isTimeHit = false;
+                    recreate();
                 }
             }
         });
